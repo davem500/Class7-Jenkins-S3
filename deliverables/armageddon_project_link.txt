@@ -2,6 +2,6 @@ Name: David McKenzie
 
 Group: Brotherhood of Steel
 
-Group Leader: Omar
+Group Leader: Omar Fleming
 
 Group Armageddon Link: https://github.com/Brotherhood-Of-Steel-Cloud-AI-DevOps/BOS-ARMAGEDDON-LABS-1-3
