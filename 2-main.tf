@@ -10,13 +10,24 @@ resource "aws_s3_bucket" "frontend" {
 
 resource "aws_s3_object" "picture" {
   bucket = aws_s3_bucket.frontend.id
-  key    = "armageddon_evidence/arm_proof_image.png"
-  source = "${path.module}/armageddon_evidence/arm_proof_image.png"
+  key    = "deliverables/arm_proof_image.png"
+  source = "${path.module}/deliverables/arm_proof_image.png"
 }
 
 resource "aws_s3_object" "text" {
   bucket = aws_s3_bucket.frontend.id
-  key    = "armageddon_evidence/rmageddon_project_link.txt"
-  source = "${path.module}/armageddon_evidence/armageddon_project_link.txt"
+  key    = "deliverables/armageddon_project_link.txt"
+  source = "${path.module}/deliverables/armageddon_project_link.txt"
 }
 
+resource "aws_s3_object" "picture" {
+  bucket = aws_s3_bucket.frontend.id
+  key    = "deliverables/pipeline-deployment.png"
+  source = "${path.module}/deliverables/pipeline-deployment.png"
+}
+
+resource "aws_s3_object" "picture" {
+  bucket = aws_s3_bucket.frontend.id
+  key    = "deliverables/arm_proof_image.png"
+  source = "${path.module}/deliverables/web-hook-delivery.png"
+}
