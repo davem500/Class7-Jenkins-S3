@@ -22,12 +22,12 @@ resource "aws_s3_object" "armageddon_project_link" {
 
 resource "aws_s3_object" "pipeline-deployment" {
   bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/pipeline-deployment.png"
-  source = "${path.module}/deliverables/pipeline-deployment.png"
+  key    = "deliverables/pipeline_deployment.png"
+  source = "${path.module}/deliverables/pipeline_deployment.png"
 }
 
 resource "aws_s3_object" "web-hook-delivery" {
   bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/arm_proof_image.png"
-  source = "${path.module}/deliverables/web-hook-delivery.png"
+  key    = "deliverables/web_hook_delivery.png"
+  source = "${path.module}/deliverables/web_hook_delivery.png"
 }
