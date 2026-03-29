@@ -64,10 +64,10 @@ resource "aws_s3_object" "pipeline_deployment_2" {
   content_type = "text/plain"
 }
 
-resource "aws_s3_object" "web_hook_delivery" {
+resource "aws_s3_object" "webhook_delivery" {
   bucket       = aws_s3_bucket.frontend.id
-  key          = "deliverables/web_hook_delivery.png"
-  source       = "${path.module}/deliverables/web_hook_delivery.png"
+  key          = "deliverables/webhook_delivery.png"
+  source       = "${path.module}/deliverables/webhook_delivery.png"
   content_type = "image/png"
 }
 
