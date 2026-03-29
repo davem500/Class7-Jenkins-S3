@@ -59,9 +59,9 @@ resource "aws_s3_object" "pipeline_deployment" {
 
 resource "aws_s3_object" "pipeline_deployment_2" {
   bucket       = aws_s3_bucket.frontend.id
-  key          = "deliverables/pipeline_deployment_2.png"
-  source       = "${path.module}/deliverables/pipeline_deployment_2.png"
-  content_type = "image/png"
+  key          = "deliverables/pipeline_deployment_2.txt"
+  source       = "${path.module}/deliverables/pipeline_deployment_2.txt"
+  content_type = "text/plain"
 }
 
 resource "aws_s3_object" "web_hook_delivery" {
@@ -75,5 +75,12 @@ resource "aws_s3_object" "s3_bucket_evidence" {
   bucket       = aws_s3_bucket.frontend.id
   key          = "deliverables/s3_bucket_evidence.png"
   source       = "${path.module}/deliverables/s3_bucket_evidence.png"
+  content_type = "image/png"
+}
+
+resource "aws_s3_object" "s3_bucket_evidence_2" {
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/s3_bucket_evidence_2.png"
+  source       = "${path.module}/deliverables/s3_bucket_evidence_2.png"
   content_type = "image/png"
 }
