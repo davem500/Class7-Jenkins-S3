@@ -37,43 +37,43 @@ resource "aws_s3_bucket_policy" "s3_public_access_policy" {
 }
 
 resource "aws_s3_object" "armageddon_proof_email" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/armageddon_proof_email.png"
-  source = "${path.module}/deliverables/armageddon_proof_email.png"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/armageddon_proof_email.png"
+  source       = "${path.module}/deliverables/armageddon_proof_email.png"
   content_type = "image/png"
 }
 
 resource "aws_s3_object" "armageddon_project_link" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/armageddon_project_link.txt"
-  source = "${path.module}/deliverables/armageddon_project_link.txt"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/armageddon_project_link.txt"
+  source       = "${path.module}/deliverables/armageddon_project_link.txt"
   content_type = "text/plain"
 }
 
 resource "aws_s3_object" "pipeline_deployment" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/pipeline_deployment.png"
-  source = "${path.module}/deliverables/pipeline_deployment.png"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/pipeline_deployment.png"
+  source       = "${path.module}/deliverables/pipeline_deployment.png"
   content_type = "image/png"
 }
 
 resource "aws_s3_object" "pipeline_deployment_2" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/pipeline_deployment_2.png"
-  source = "${path.module}/deliverables/pipeline_deployment_2.png"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/pipeline_deployment_2.png"
+  source       = "${path.module}/deliverables/pipeline_deployment_2.png"
   content_type = "image/png"
 }
 
 resource "aws_s3_object" "web_hook_delivery" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/web_hook_delivery.png"
-  source = "${path.module}/deliverables/web_hook_delivery.png"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/web_hook_delivery.png"
+  source       = "${path.module}/deliverables/web_hook_delivery.png"
   content_type = "image/png"
 }
 
 resource "aws_s3_object" "s3_bucket_evidence" {
-  bucket = aws_s3_bucket.frontend.id
-  key    = "deliverables/s3_bucket_evidence.png"
-  source = "${path.module}/deliverables/s3_bucket_evidence.png"
+  bucket       = aws_s3_bucket.frontend.id
+  key          = "deliverables/s3_bucket_evidence.png"
+  source       = "${path.module}/deliverables/s3_bucket_evidence.png"
   content_type = "image/png"
 }
